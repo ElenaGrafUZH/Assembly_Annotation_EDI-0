@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #*----------Cluster specification----------
-#SBATCH --job-name="02_fastqc"
-#SBATCH --array=1-3   
+#SBATCH --job-name="04_fastqc_RNAseq"
+#SBATCH --array=1-2  
 #SBATCH --mail-type=fail
 #SBATCH --cpus-per-task=1
 #SBATCH --time=02:00:00
@@ -13,14 +13,13 @@
 #*----------Variables----------
 USER='egraf'
 WORKDIR="/data/users/${USER}/assembly_annotation_course"
-OUTDIR="${WORKDIR}/2_fastqc"
+OUTDIR="${WORKDIR}/4_fastqc_RNAseq"
 CONTAINERFASTQC=/containers/apptainer/fastqc-0.12.1.sif
 
 #*----------Input file variables----------
 FILES=(
-    "${WORKDIR}/Data/Edi-0/ERR11437331.fastq.gz"
-    "${WORKDIR}/Data/RNAseq_Sha/ERR754081_1.fastq.gz"
-    "${WORKDIR}/Data/RNAseq_Sha/ERR754081_2.fastq.gz"
+    "${WORKDIR}/3_fastp/ERR754081_1.trimmed.fastq.gz"
+    "${WORKDIR}/3_fastp/ERR754081_2.trimmed.fastq.gz"
 )
 
 #*----------Select file based on input array----------
