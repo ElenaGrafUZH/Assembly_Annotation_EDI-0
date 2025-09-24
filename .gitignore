@@ -1,3 +1,11 @@
-2_fastqc
 Data
 Job_log
+2_fastqc
+3_fastp
+4_fastqc_RNAseq
+5_jellyfish
+6_flye
+6_flye_hifi
+7_hifiasm
+8_lja
+9_trinity
