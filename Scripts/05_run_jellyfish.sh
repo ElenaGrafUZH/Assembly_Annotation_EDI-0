@@ -13,7 +13,6 @@
 USER='egraf'
 WORKDIR="/data/users/${USER}/assembly_annotation_course"
 OUTDIR="${WORKDIR}/5_jellyfish"
-CONTAINERJELLYFISH=/containers/apptainer/jellyfish:2.2.6--0
 READ="${WORKDIR}/Data/Edi-0/ERR11437331.fastq.gz"
 
 
