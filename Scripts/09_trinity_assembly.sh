@@ -4,7 +4,7 @@
 #SBATCH --job-name="09_trinity_assembly"
 #SBATCH --mail-type=fail
 #SBATCH --cpus-per-task=16
-#SBATCH --time=1-00:00:00
+#SBATCH --time=3-00:00:00
 #SBATCH --mem=64G
 #SBATCH --partition=pibu_el8
 #SBATCH --output=/data/users/egraf/assembly_annotation_course/Job_log/slurm-%A.out
