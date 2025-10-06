@@ -9,3 +9,12 @@ Job_log
 7_hifiasm
 8_lja
 9_trinity
+10_1_busco
+10_2_busco_plots
+11_quast
+12_merqury
+12_merqury_Mer
+13_comparing_genomes
+Job_log_errors
+busco_downloads
+best_k.txt
